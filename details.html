@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/colors/color-1.css">
+
+    <title>EL♥ROI</title>
+    <link rel="icon" href="assets/img/icoLogo.ico">
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header " id="header">
+        <div class="subheader">
+            <span class="subheader__info">Envíos gratis a toda lima metropolitana, aprovecha!!</span>
+            <div class="subheader__social">
+                <div class="subheader__insta">
+                    <i class="bx bxl-instagram"></i>
+                </div>
+                <div class="subheader__x">
+                    <i class="bx bxl-twitter"></i>
+                </div>
+                <div class="subheader__tiktok">
+                    <i class="bx bxl-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo-icon">
+                <img id="logoBlanco" class="logo" src="assets/img/logoBlanco.png" alt="Logo ELROI ">
+                <img id="logoNegro" class="logo hidden" src="assets/img/logoNegro.png" alt="Logo ELROI Negro">
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" id="link1" class="nav__link">Inicio</a>
+                    </li>
+                    <li class="nav__item"><a href="shop.html" id="link2" class="nav__link">Shop</a></li>
+                    <li class="nav__item"><a href="about.html" id="link7" class="nav__link">About us</a></li>
+                    <li class="nav__item"><a href="contact.html" id="link8" class="nav__link">Contacts</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="bx bx-x"></i>
+                </div>
+            </div>
+            <div class="nav__btns">
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class="bx bx-cart-alt " id="link3"></i>
+                </div>
+                <div class="nav__search" id="cart-heart">
+                    <i class="bx bx-search" id="link4"></i>
+                </div>
+                <div class="login__toggle" id="login-button">
+                    <i class="bx bx-user" id="link5"></i>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="bx bx-grid-alt" id="link6"></i>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <!--=============== CART ===============-->
+    <div class="cart" id="cart">
+        <i class="bx bx-x cart__close" id="cart-close"></i>
+        <h2 class="cart__title-center">my cart</h2>
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-1.png" alt="" class="cart__img lazy">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">winkbreaker</h3>
+                    <span class="cart__price">s/50</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-2.png" alt="" class="cart__img lazy">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cardigan</h3>
+                    <span class="cart__price">s/70</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="assets/img/cart-3.png" alt="" class="cart__img lazy">
+                </div>
+                <div class="cart__details">
+                    <h3 class="cart__title">Cartoon</h3>
+                    <span class="cart__price">s/30</span>
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="bx bx-minus"></i>
+                            </span>
+                            <span class="cart__amount-number">1</span>
+                            <span class="cart__amount-box">
+                                <i class="bx bx-plus"></i>
+                            </span>
+                        </div>
+
+                        <i class="bx bx-trash-alt cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 item</span>
+            <span class="cart__total">s/ 80</span>
+        </div>
+    </div>
+
+    <!--=============== LOGIN ===============-->
+    <div class="login" id="login">
+        <i class="bx bx-x login__close" id="login-close"></i>
+
+        <h2 class="login__title-center">Inicia sesion</h2>
+        <form action="" class="login__form grid">
+            <div class="login__content">
+                <label for="" class="login__label">Email</label>
+                <input type="email" class="login__input" placeholder="example@gmail.com">
+            </div>
+
+            <div class="login__content">
+                <label for="" class="login__label">Contraseña</label>
+                <input type="password" class="login__input" placeholder="your password">
+            </div>
+
+            <div>
+                <a href="" class="button__login">Ingresar</a>
+            </div>
+            <div class="login__separador">
+                <div class="line1"></div>
+                <span class="loginSep">o</span>
+                <div class="line2"></div>
+            </div>
+
+            <div class="login__redes">
+                <a href="#" class="redes">
+                    <img src="assets/img/google.svg" class="redImg" alt="">
+                    <span class="redNom">Ingresa con Google</span>
+                </a>
+                <a href="#" class="redes">
+                    <img src="assets/img/facebook.svg" class="redImg" alt="">
+                    <span class="redNom">Ingresa con Facebook</span>
+                </a>
+                <a href="#" class="redes">
+                    <img src="assets/img/gmail.svg" class="redImg" alt="">
+                    <span>Ingresa con el correo electrónico</span>
+                </a>
+            </div>
+
+            <!-- <div>
+                <p class="signup">¿Olvidaste tu contraseña?<a href="registration.html">ingresar</a></p>
+            </div> -->
+        </form>
+    </div>
+
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <div class="box"></div>
+        
+        <!--=============== DETAILS ===============-->
+        <section class="details section">
+            <div class="details__container grid">
+                <div class="product__images grid">
+                    <div class="image__sector image__selectos-click">
+                        <div class="image__sector-show">
+                            <img src="assets/img/new-1.png" alt="" class="list__img">
+                        </div>
+                        <div class="image__sector-show">
+                            <img src="assets/img/new-2.png" alt="" class="list__img">
+                        </div>
+                        <div class="image__sector-show">
+                            <img src="assets/img/new-3.png" alt="" class="list__img">
+                        </div>
+                        <div class="image__sector-show">
+                            <img src="assets/img/new-4.png" alt="" class="list__img">
+                        </div>
+                    </div>
+                    <div class="image__selected">
+                        <img src="assets/img/new-1.png" alt="" id="MainProductImg">
+                    </div>
+                </div>
+
+                <div class="product__info">
+                    <h3 class="details__title">Breeze Eucalyptus Dress</h3>
+                    <div class="details__prices">
+                        <span class="details__price">$360.00</span>
+                        <span class="details__descount">$500.00</span>
+                    </div>
+                    <div class="details__size">
+                        <h4 class="details__size-Size">Size</h4>
+                        <div class="details__size-selected">
+                            <div class="details__size-selectedt active-size"><span>XS</span></div>
+                            <div class="details__size-selectedt"><span>S</span></div>
+                            <div class="details__size-selectedt"><span>M</span></div>
+                            <div class="details__size-selectedt"><span>L</span></div>
+                            <div class="details__size-selectedt"><span>XL</span></div>
+                        </div>
+
+                    </div>
+
+                    <span class="details__size-exist">Hurry, Only 1 left!</span>
+
+                    <div class="details__addCar">
+                        <div class="details__cart"><span>Add to cart</span></div>
+                        <div class="details__paypal">
+                            <span>Pay with</span>
+                            <img src="#" alt="">
+                        </div>
+                        <div class=""></div>
+                    </div>
+
+                    <div class="details__descriptionGroup">
+                        <div class="details__description-product">
+                            <header class="productDetail__header">
+                                <h3 class="descriptio__icon-title">Product details</h3>
+                                <i class="bx bx-plus detail__icon"></i>
+                            </header>
+                            <div class="productDetail__content">
+                                <p class="detail__description">
+                                    Maxi-style dress entirely woven, with floral jacquard detail. Woven in 50% Tanguis
+                                    cotton and 50% viscose yarn. Soft to the touch. Crafted in high-quality yarns.
+                                    Exclusive design by Fasce.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="details__description-product">
+                            <header class="productDetail__header">
+                                <h3 class="descriptio__icon-title">Shipping</h3>
+                                <i class="bx bx-plus detail__icon"></i>
+                            </header>
+                            <div class="productDetail__content">
+                                <p class="detail__description">
+                                    DHL is our logistics partner and our delivery takes to 5 days.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="details__description-product">
+                            <header class="productDetail__header">
+                                <h3 class="descriptio__icon-title">Exchange</h3>
+                                <i class="bx bx-plus detail__icon"></i>
+                            </header>
+                            <div class="productDetail__content">
+                                <p class="detail__description">
+                                    We offer even exchanges for a new size or a new style on all full priced
+                                    merchandise. Our policy lasts 15 days. If 15 days have gone by since your purchase,
+                                    unfortunately, we can’t offer you a refund or exchange.
+
+                                    Sale items are FINAL SALE. We will not accept returns or process exchanges or
+                                    refunds on any sale purchase. This includes items listed on the sale page and any
+                                    items marked FINAL SALE.
+
+                                    To be eligible for a return, your item must be unused and in the same condition that
+                                    you received it. It must also be in the original packaging.
+
+                                    If you need to exchange it for the same item, send us an email at
+                                    hello@fascegroup.com and send your item to: Calle Miguel Dasso 139, San Isidro, Lima
+                                    27, PE-LMA, Perú.
+
+                                    Once we receive your return, please allow up to 2-5 business days for processing and
+                                    another 5-10 days for your bank to post the refund to your account.
+
+                                    You will be responsible for paying for your own shipping costs for returning your
+                                    item. Shipping costs are non-refundable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== RELATED PRODUCTS ===============-->
+        <section class="new section">
+            <h2 class="section__title">Releated produtcs</h2>
+            <div class="new__container container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper new-wrapper">
+                        <!-- NEW CONTENT -- 1 -->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">25%</div>
+                            <img src="assets/img/blusaC.jpg" alt="" class="new__img">
+                            <span class="new__img2" style="background-image:url(assets/img/blusa2.webp)"></span>
+                            <h3 class="new__title">winkbreaker jacket</h3>
+
+                            <div class="new__prices">
+                                <span class="new__price">S/50.87</span>
+                                <span class="new__descount">S/30.45</span>
+                            </div>
+                            <div>
+                                <a href="details.html" class="button new__button"><i
+                                        class="bx bx-cart-alt new__icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- NEW CONTENT -- 2-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">25%</div>
+                            <img src="assets/img/blusa3.png" alt="" class="new__img lazy">
+                            <span class="new__img2" style="background-image:url(assets/img/new-1.png)"></span>
+                            <h3 class="new__title">Air jordan Zipper</h3>
+                            <!-- <span class="new__subtitle">Accessory</span> -->
+                            <div class="new__prices">
+                                <span class="new__price">S/30.87</span>
+                                <span class="new__descount">S/21.45</span>
+                            </div>
+                            <div>
+                                <a href="details.html" class="button new__button"><i
+                                        class="bx bx-cart-alt new__icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- NEW CONTENT -- 3-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">25%</div>
+                            <img src="assets/img/blusa4.png" alt="" class="new__img lazy">
+                            <span class="new__img2" style="background-image:url(assets/img/blusa3.webp)"></span>
+                            <h3 class="new__title">Air jordan Zipper</h3>
+                            <!-- <span class="new__subtitle">Accessory</span> -->
+                            <div class="new__prices">
+                                <span class="new__price">S/30.87</span>
+                                <span class="new__descount">S/21.45</span>
+                            </div>
+                            <div>
+                                <a href="details.html" class="button new__button"><i
+                                        class="bx bx-cart-alt new__icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- NEW CONTENT -- 4-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">25%</div>
+                            <img src="assets/img/new-4.png" alt="" class="new__img lazy">
+                            <span class="new__img2" style="background-image:url(assets/img/new-2.png)"></span>
+                            <h3 class="new__title">Air jordan Zipper</h3>
+                            <!-- <span class="new__subtitle">Accessory</span> -->
+                            <div class="new__prices">
+                                <span class="new__price">S/30.87</span>
+                                <span class="new__descount">S/21.45</span>
+                            </div>
+                            <div>
+                                <a href="details.html" class="button new__button"><i
+                                        class="bx bx-cart-alt new__icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- NEW CONTENT -- 5-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">25%</div>
+                            <img src="assets/img/new-1.png" alt="" class="new__img lazy">
+                            <span class="new__img2" style="background-image:url(assets/img/blusa.jpg)"></span>
+                            <h3 class="new__title">Air jordan Zipper</h3>
+                            <!-- <span class="new__subtitle">Accessory</span> -->
+                            <div class="new__prices">
+                                <span class="new__price">S/30.87</span>
+                                <span class="new__descount">S/21.45</span>
+                            </div>
+                            <div>
+                                <a href="details.html" class="button new__button"><i
+                                        class="bx bx-cart-alt new__icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- NEW CONTENT -- 6-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">25%</div>
+                            <img src="assets/img/blusa2.webp" alt="" class="new__img lazy">
+                            <span class="new__img2" style="background-image:url(assets/img/new-5.png)"></span>
+                            <h3 class="new__title">Air jordan Zipper</h3>
+                            <!-- <span class="new__subtitle">Accessory</span> -->
+                            <div class="new__prices">
+                                <span class="new__price">S/30.87</span>
+                                <span class="new__descount">S/21.45</span>
+                            </div>
+                            <div>
+                                <a href="details.html" class="button new__button"><i
+                                        class="bx bx-cart-alt new__icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- NEW CONTENT -- 7-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">25%</div>
+                            <img src="assets/img/new-2.png" alt="" class="new__img lazy">
+                            <span class="new__img2" style="background-image:url(assets/img/new-3.png)"></span>
+                            <h3 class="new__title">Air jordan Zipper</h3>
+                            <!-- <span class="new__subtitle">Accessory</span> -->
+                            <div class="new__prices">
+                                <span class="new__price">S/30.87</span>
+                                <span class="new__descount">S/21.45</span>
+                            </div>
+                            <div>
+                                <a href="details.html" class="button new__button"><i
+                                        class="bx bx-cart-alt new__icon"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- NEW CONTENT -- 8-->
+                        <div class="new__content swiper-slide">
+                            <div class="new__tag">25%</div>
+                            <img src="assets/img/about-img.jpg" alt="" class="new__img lazy">
+                            <span class="new__img2" style="background-image:url(assets/img/blusa.jpg)"></span>
+                            <h3 class="new__title">Air jordan Zipper</h3>
+                            <!-- <span class="new__subtitle">Accessory</span> -->
+                            <div class="new__prices">
+                                <span class="new__price">S/30.87</span>
+                                <span class="new__descount">S/21.45</span>
+                            </div>
+                            <div>
+                                <a href="details.html" class="button new__button"><i
+                                        class="bx bx-cart-alt new__icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-next next"></div>
+                    <div class="swiper-button-prev next"></div> -->
+                </div>
+
+            </div>
+            <!-- <div class="new__button--more">
+                <a href="details.html" class="button__more">Ver todo</a>
+            </div> -->
+        </section>
+
+
+        <!-- <section class="related__products section">
+            <h2>Releated produtcs</h2>
+        </section> -->
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+
+        <div class="footer__container container grid">
+            <!-- footer content 1 -->
+            <div class="footer__content">
+                <!-- <a href="#" class="footer__logo">
+                    <img class="footer__logo-item" src="assets/img/logo.png" alt="Logo ELROI">
+                </a> -->
+                <h3 class="footer__title">Siguenos</h3>
+                <ul class="footer__social">
+                    <a href="#" class="footer__social-link"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-tiktok"></i></a>
+                    <a href="#" class="footer__social-link"><i class="bx bxl-whatsapp"></i></a>
+                </ul>
+            </div>
+            <!-- footer content 3-->
+            <div class="footer__content">
+                <h3 class="footer__title">Ayuda</h3>
+                <ul class="footer__liks">
+                    <li><a href="#" class="footer__link list">Preguntas frecuentes</a></li>
+                    <li><a href="#" class="footer__link list">Terminos y condiciones</a></li>
+                    <li><a href="#" class="footer__link list">Costos y pazo de envío</a></li>
+                    <li><a href="#" class="footer__link"><img class="libro lazy" src="assets/img/reclamaciones.png"
+                                alt="Libro de reclamaciones"></a></li>
+                </ul>
+            </div>
+            <!-- footer content 2 -->
+            <div class="footer__content">
+                <h3 class="footer__title">Información</h3>
+                <ul class="footer__liks">
+                    <li><a href="#" class="footer__link list">Nosotros</a></li>
+                    <li><a href="#" class="footer__link list">Contactos</a></li>
+                    <li><a href="#" class="footer__link list">Políticas de privacidad</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer__line">
+
+        </div>
+
+        <span class="footer__copy">&#169;EL♥ROI. Todos los derechos reservados</span>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+        </a>
+
+        <a href="#" class="scrollupWhatsapp" id="scroll-whatsapp">
+            <img class="" src="assets/img/whatsapp.svg" alt="">
+        </a>
+
+    </footer>
+
+
+    <!--=============== LIGHTBOX ===============-->
+
+    <!--=============== SCROLL UP ===============-->
+
+    <!--=============== STYLE SWITCHER ===============-->
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
